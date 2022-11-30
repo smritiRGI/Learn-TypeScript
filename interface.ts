@@ -9,7 +9,7 @@ interface User {
     provideDiscount(name : string , percent : number) : number
 }
 
-let customer : User = {
+let customerOne : User = {
     _id : 22,
     name : "Smriti",
     email : "smritirastogi@gmail.com",
@@ -20,6 +20,19 @@ let customer : User = {
         return 10
     }
 }
+
+let customerTwo : User = {
+    _id : 33,
+    name :"Kirti",
+    email : "kirti123@gmail.com",
+    startTrial : () => {
+        return "Trial started"
+    },
+    provideDiscount : (name = "kirti20" , discount = 20) => {
+        return discount
+    }
+}
+
 
 export {}
 
