@@ -4,7 +4,7 @@ function createUser ( { name : String , age : number } ) {
 createUser( { name : "Smriti" , age : 10})
 
 // syntax of a function accepting an object in typescript & return an object
-function createProduct () : {} {
+function createProduct ({}) : {} {
     return {}
 }
 
